@@ -1,10 +1,10 @@
 # agro-eye
 
-**1. The "Elevator Pitch" (The 'Why')**
+*1. The "Elevator Pitch" (The 'Why')*
 
     "Sentinel Food Intelligence is a professional-grade platform designed to monitor global food supply chains for economic volatility and security threats. Unlike static dashboards, SFI is a fully automated 'data factory' that integrates real-time data engineering, predictive machine learning, and defensive cybersecurity protocols to transform raw global market data into actionable risk intelligence."
 
-**2. Core Features**
+*2. Core Features*
 
     🛡️ Cybersecurity (The Shield):
 
