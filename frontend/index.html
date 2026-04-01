@@ -11,3 +11,29 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
+
+<script>
+  let mousedata = []
+
+  window.addEventListener('mousemove', e => { 
+    mousedata.push({
+      x: e.clientX,
+      y: e.clientY,
+      t: Date.now()
+    });
+
+    if (mousedata.length > 50) { 
+      sendToServer(mousedata);
+      mousedata = []
+    }
+  });
+
+  function sendToServer(data) { 
+    fetch('http://localhost:8000/ingest', { 
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ events: data })
+    });
+  }
+</script>
